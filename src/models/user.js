@@ -2,10 +2,10 @@ import { ObjectId } from "mongodb";
 import mongoose from "mongoose";
 
 const userSchema = new mongoose.Schema({
-  id: ObjectId,
+  name: String,
   email: String,
   password: String,
-  userId: ObjectId,
+  userId: String,
 });
 
 const User = mongoose.model("User", userSchema, "user");
